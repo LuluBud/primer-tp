@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>BudMusic</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>BudMusic</h1></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li>
+                    <a href="#">Tu Biblioteca</a>
+                    <ul class="submenu">
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Mis Videos</a></li>
+                        <li><a href="#">Ver Más tarde</a></li>
+                        <li><a href="#">Videos que me gustan</a></li>
+                        <li><a href="#">Suscripciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="registro">
+                <a href="#">Registrarte</a>
+                <button>Iniciar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Contacto</h2>
+            <form action="procesar_formulario.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Regístrate para disfrutar de canciones y podcasts sin límites, con anuncios ocasionales.</p>
+        <button>Regístrate</button>
+    </footer>
+</body>
+</html>
